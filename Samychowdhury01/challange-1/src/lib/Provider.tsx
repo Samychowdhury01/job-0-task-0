@@ -1,6 +1,6 @@
 "use client";
 
-import { NextUIProvider } from "@nextui-org/system";
+import { NextUIProvider } from "@nextui-org/react";
 import { ReactNode } from "react";
 
 const Provider = ({ children }: { children: ReactNode }) => {

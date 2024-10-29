@@ -19,4 +19,4 @@ Submission :
 - Create a Directory With you github username and 2 more sub - directories with the name Challange-1 & 2
 - after completing the task create a pr to this repo
 - must provide live link
-- Deadline 3rd November 12AM Bangladesh standard time
+- Deadline 2nd November 12AM Bangladesh standard time

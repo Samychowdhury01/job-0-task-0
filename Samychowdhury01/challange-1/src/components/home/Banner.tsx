@@ -6,8 +6,8 @@ import ball from "@/assets/ball.png";
 import ButtonComponent from "../ui/ButtonComponent";
 const BannerComponent = () => {
   return (
-    <div className="relative mb-[280px]">
-      <div className="banner-bg h-screen relative">
+    <div className="relative mb-[210px]">
+      <div className="banner-bg h-screen md:h-[1078px] relative">
         <Container>
           <div className="md:pt-5">
             <NavbarComponent />
@@ -35,7 +35,7 @@ const BannerComponent = () => {
         </Container>
       </div>
       {/* ball image */}
-      <div className="absolute -bottom-[36%] left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute -bottom-[21%] left-1/2 transform -translate-x-1/2 z-10">
         <Image src={ball} alt="banner-ball-image" width={765} height={766} />
       </div>
     </div>

@@ -1,26 +1,28 @@
 import React from "react";
 import Container from "../ui/Container";
 import SectionTag from "../ui/SectionTag";
-import { FaCode, FaUmbrella } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import SectionHeading from "../ui/SectionHeading";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import TechSectionCard from "./TechSectionCard";
 import Image from "next/image";
 import image1 from '@/assets/card-image-1.png'
 import image2 from '@/assets/card-image-2.png'
+import { GrServices } from "react-icons/gr";
 
 const TechSectionComponent = () => {
   return (
     <div>
       <Container>
         {/* custom tag component */}
-        <SectionTag title="Our Solution">
-          <FaUmbrella />
+        <SectionTag title="Our Service">
+        <GrServices />
         </SectionTag>
         {/* section heading */}
         <SectionHeading
           title=" Transform your tech business with tailored services"
           text="Websites / Applications / Web3 / Blockchain"
+          className="w-1/3"
         />
         {/* card section*/}
         <div className="grid grid-cols-3 gap-10">

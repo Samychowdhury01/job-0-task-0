@@ -1,12 +1,12 @@
-import BannerComponent from "@/components/home/Banner";
-import TechSectionComponent from "@/components/home/TechSection";
+import HomeContainer from "@/components/home/HomeContainer";
+
+
 
 
 const HomePage = () => {
   return (
     <div>
-      <BannerComponent/>
-      <TechSectionComponent/>
+    <HomeContainer/>
     </div>
   );
 };

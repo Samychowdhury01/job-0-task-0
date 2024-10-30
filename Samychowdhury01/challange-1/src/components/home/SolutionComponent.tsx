@@ -47,9 +47,9 @@ const SolutionComponent = () => {
                 unleashing seamless digital
                 solutions"
           text="Innovative solutions for seamless digital transformation."
-          className="w-1/2"
+          className="md:w-1/2"
         />
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {data.map((item, index) => (
             <Card key={index} shadow="sm">
               <CardBody className="overflow-visible p-0">
@@ -62,11 +62,11 @@ const SolutionComponent = () => {
                   src={item.img.src}
                 />
               </CardBody>
-              <CardFooter className="text-small flex-col items-start -5 bg-accent border-1 border-[#F5F5F5]">
-                <h3 className="text-secondary capitalize text-xl font-bold w-1/ block">
+              <CardFooter className="text-small flex-col items-start -5 bg-accent dark:bg-dark-accent border-1 border-[#F5F5F5]">
+                <h3 className="text-secondary dark:text-white capitalize text-xl font-bold w-1/ block">
                   {item.title}
                 </h3>
-                <p className="text-sm text-secondaryForeground">{item.text}</p>
+                <p className="text-sm text-secondaryForeground dark:text-dark-primary">{item.text}</p>
               </CardFooter>
             </Card>
           ))}

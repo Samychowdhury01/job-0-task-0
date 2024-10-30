@@ -10,7 +10,7 @@ const ButtonComponent = ({
   radius: TRadius;
 }) => {
   return (
-    <Button radius={radius} className="bg-secondary text-white px-6">
+    <Button radius={radius} className="bg-secondary dark:bg-dark-primary text-white dark:text-secondary px-6">
       {text}
     </Button>
   );

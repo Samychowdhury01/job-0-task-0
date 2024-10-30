@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { ReactNode } from "react";
 
 type TProps = {
@@ -8,6 +7,12 @@ type TProps = {
   subTitle: string;
   text: string;
 };
+
+const shortText = (text: string, wordLimit: number) => {
+  const words = text.split(" ");
+  return words.length > wordLimit ? words.slice(0, wordLimit).join(" ") + "..." : text;
+};
+
 const TechSectionCard = ({
   children,
   className,
@@ -20,12 +25,23 @@ const TechSectionCard = ({
       <div className="space-y-3">
         {children}
         {/* card heading */}
-        <h1 className="text-secondary text-2xl font-bold">{title}</h1>
+        <h1 className="text-secondary dark:text-dark-primary text-2xl font-bold">
+          {title}
+        </h1>
         {/* sub-heading */}
-        <p className="text-secondaryForeground">{subTitle}</p>
+        <p className="text-secondaryForeground dark:text-[#A3A3A3]">
+          {subTitle}
+        </p>
       </div>
       {/* text */}
-      <p className="text-secondaryForeground mt-5">{text}</p>
+      <p className="text-secondaryForeground dark:text-[#A3A3A3] mt-5">
+        <span className="block sm:hidden">
+          {shortText(text, 5)}
+        </span>
+        <span className="hidden sm:block">
+          {text}
+        </span>
+      </p>
     </div>
   );
 };

@@ -19,25 +19,26 @@ const FaqComponent = () => {
 knowledge base API and documentation."
           className=""
         />
-        <div className="flex gap-10">
-          <div className="flex-1 w-[645px] h-[400px]">
+        <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex-1 md:w-[645px] md:h-[400px]">
             <Image
               src={faq}
               alt="FAQ section image"
-              className="object-cover w-full h-full  rounded-3xl"
+              className="object-contain md:object-cover w-full h-full  rounded-3xl dark:border-gray-500"
             />
           </div>
-          <div className="flex-1 bg-accent px-10 py-5 rounded-3xl border-1">
+          {/* text */}
+          <div className="flex-1 bg-accent dark:bg-dark-bg px-10 py-5 rounded-3xl border dark:border-gray-500">
             <div className="space-y-3">
               <FaPiedPiper size={50} />
               {/* card heading */}
-              <h1 className="text-secondary text-2xl font-bold">
+              <h1 className="text-secondary dark:text-white text-2xl font-bold">
                 Full API Access
               </h1>
               {/* sub-heading */}
             </div>
             {/* text */}
-            <p className="text-secondaryForeground my-5 ">
+            <p className="text-secondaryForeground dark:text-dark-primary my-5 ">
               Sign up and access our intuitive platform. Upload your data
               effortlessly, then customize preferences. Our robust tools analyze
               and generate insights promptly. Collaborate seamlessly with team

@@ -22,10 +22,10 @@ const TechSectionComponent = () => {
         <SectionHeading
           title=" Transform your tech business with tailored services"
           text="Websites / Applications / Web3 / Blockchain"
-          className="w-1/3"
+          className="md:w-1/3"
         />
         {/* card section*/}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* card */}
           <TechSectionCard
             title="Lorem Ipsum"
@@ -33,22 +33,22 @@ const TechSectionComponent = () => {
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos
               voluptatem quo laborum perferendis eligendi voluptas nam
               dignissimos hic dolorem inventore…"
-            className="bg-accent"
+            className="bg-accent dark:bg-transparent"
           >
             <TiWeatherPartlySunny size={50} />
           </TechSectionCard>
-          <div className="col-span-2">
+          <div className="md:col-span-2">
             <Image
               alt="card image"
               src={image1}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-[300px] md:h-full border rounded-3xl"
             />
           </div>
           <div>
             <Image
               alt="card image"
               src={image2}
-              className="object-cover w-full h-full rounded-3xl"
+              className="object-cover w-full h-[250px] md:h-full rounded-3xl border"
             />
           </div>
           <TechSectionCard
@@ -57,7 +57,7 @@ const TechSectionComponent = () => {
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos
               voluptatem quo laborum perferendis eligendi voluptas nam
               dignissimos hic dolorem inventore…"
-            className="bg-white"
+            className="bg-white dark:bg-transparent"
           >
             <FaCode size={50} />
           </TechSectionCard>

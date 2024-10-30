@@ -36,7 +36,7 @@ export default function RootLayout({
             <div className="absolute z-50 top-7 w-full ">
               <NavbarComponent />
             </div>
-            {children}
+            <main>{children}</main>
             <div className="relative top-28">
               <Footer />
             </div>

@@ -17,13 +17,13 @@ const Blog = () => {
         <SectionHeading
           title="Our Blog & News"
           text="We share essential insights from the technology sector, AI,and the world of software development."
-          className="w-1/3"
+          className="md:w-1/3"
         />
-        <div className="bg-accent flex rounded-3xl">
+        <div className="bg-accent dark:bg-dark-bg flex flex-col-reverse md:flex-row rounded-3xl">
           {/* text container */}
-          <div className="px-10 py-7 w-1/2">
+          <div className="px-10 py-7 md:w-1/2">
             <h3 className="text- text-2xl font-bold">Unveiling the Art of Web Design: A Step-by-Step Guide</h3>
-            <p className="text-secondaryForeground mt-7 mb-3">
+            <p className="text-secondaryForeground dark:text-dark-primary mt-7 mb-3">
               In the ever-evolving digital landscape, a visually appealing
               anduser-friendly website is crucial for success. Whether
               you&rsquo;re aseasoned designer or a novice looking to dip your

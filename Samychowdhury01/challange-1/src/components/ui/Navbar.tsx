@@ -15,6 +15,7 @@ import { useState } from "react";
 import ButtonComponent from "./ButtonComponent";
 import Link from "next/link";
 import Container from "./Container";
+import ThemeToggle from "../ThemeSwitcher";
 
 // Navigation items
 const navItems = [
@@ -40,7 +41,7 @@ export default function NavbarComponent() {
         <Link
           href={item.href}
           className={`text-sm font-medium ${isMobile ? "w-full" : ""} ${
-            isActive(item.href) ? "border-b-1 border-primary" : ""
+            isActive(item.href) ? "border-b-1 border-primary dark:border-dark-primary" : ""
           }`}
           // scroll={false}
         >
@@ -51,7 +52,10 @@ export default function NavbarComponent() {
 
   return (
     <Container>
-      <Navbar className="rounded-full nav-bg text-primary flex items-center justify-around" position="static">
+      <Navbar
+        className="rounded-full nav-bg text-primary dark:text-dark-primary flex items-center justify-around"
+        position="static"
+      >
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -60,7 +64,7 @@ export default function NavbarComponent() {
           />
           {/* Logo */}
           <NavbarBrand className="hidden md:block">
-            <Image src={logo} width={150} height={40} alt="fytobyte logo" />
+            <Image src={logo} width={150} height={40} alt="fytobyte logo" className="dark:grayscale" />
           </NavbarBrand>
           {/* Mobile menu */}
           <NavbarBrand className="block md:hidden">
@@ -76,19 +80,17 @@ export default function NavbarComponent() {
         {/* Right Side - Theme Toggle and Contact Button */}
         <NavbarContent justify="end" className="gap-3 items-center">
           <NavbarItem>
-            <Button isIconOnly variant="light">
-              moon
-            </Button>
+            <ThemeToggle />
           </NavbarItem>
           <NavbarItem>
-            <Link href="/contact">
-              <ButtonComponent radius="full" text="Talk with us" />
-            </Link>
+            <Button as={Link} href="/contact" radius="full" className="bg-secondary  text-white  px-6">
+              Talk with us
+            </Button>
           </NavbarItem>
         </NavbarContent>
 
         {/* Mobile Menu */}
-        <NavbarMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+        <NavbarMenu className="mt-10" isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
           {renderNavLinks(true)}
         </NavbarMenu>
       </Navbar>

@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 .nav-bg {
   background: rgba(255, 255, 255, 0.31);
   backdrop-filter: blur(7.7px);
@@ -12,13 +13,14 @@ html{
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.banner-bg {
-  background-image: url("../assets/banner-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@media (min-width: 768px) {
+  .banner-bg {
+    background-image: url("../assets/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
-
 .gradient-text {
   background: linear-gradient(90deg, #000000 50%, #685e5e 100%);
   background-clip: text;
@@ -40,4 +42,29 @@ html{
     rgba(180, 9, 236, 0.2) 38.95%,
     rgba(54, 9, 236, 0.2) 92.27%
   );
+}
+
+/* Dark mode variants */
+.dark .gradient-text {
+  background: linear-gradient(90deg, #ffffff 50%, #685e5e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.dark .gradient-sub-text {
+  background: linear-gradient(90deg, #ffffff 50%, #000000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* .dark .banner-bg {
+  background-color: #000000;
+} */
+
+body.dark {
+  background-color: black;
 }

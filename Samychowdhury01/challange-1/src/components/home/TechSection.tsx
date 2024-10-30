@@ -12,7 +12,7 @@ import { GrServices } from "react-icons/gr";
 
 const TechSectionComponent = () => {
   return (
-    <div>
+    <div id="service">
       <Container>
         {/* custom tag component */}
         <SectionTag title="Our Service">

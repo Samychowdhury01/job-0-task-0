@@ -36,7 +36,7 @@ const SolutionComponent = () => {
     },
   ];
   return (
-    <div className="my-28">
+    <div className="my-28" id="solution">
       <Container>
         <SectionTag title="Our Solution">
           <FaUmbrella />

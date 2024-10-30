@@ -37,7 +37,9 @@ export default function RootLayout({
               <NavbarComponent />
             </div>
             {children}
-            <Footer/>
+            <div className="relative top-28">
+              <Footer />
+            </div>
           </div>
         </Provider>
       </body>

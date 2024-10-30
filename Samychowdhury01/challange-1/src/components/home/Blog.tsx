@@ -7,7 +7,7 @@ import Image from "next/image";
 import news from '@/assets/news.png'
 const Blog = () => {
   return (
-    <div>
+    <div id="blog">
       <Container>
         {/* custom tag component */}
         <SectionTag title="Tech News">

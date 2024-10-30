@@ -8,7 +8,7 @@ import { FaPiedPiper } from "react-icons/fa";
 import ButtonComponent from "../ui/ButtonComponent";
 const FaqComponent = () => {
   return (
-    <div className="mb-28">
+    <div className="mb-28" id="faq">
       <Container>
         <SectionTag title="Knowledge Base">
           <SiKnowledgebase />

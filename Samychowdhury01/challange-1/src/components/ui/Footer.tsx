@@ -7,9 +7,9 @@ import { FaMedium } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="mt-28">
+    <footer>
       <Container>
-        <div className="flex items-center justify-between mb-10">
+        <div className="grid grid-cols-4 mb-10">
           <div className="space-y-5">
             <h3 className="text-2xl font-bold text-secondary">Explore</h3>
             <ul className="text-secondaryForeground space-y-5">

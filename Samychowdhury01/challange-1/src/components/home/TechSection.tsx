@@ -6,8 +6,8 @@ import SectionHeading from "../ui/SectionHeading";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import TechSectionCard from "./TechSectionCard";
 import Image from "next/image";
-import image1 from '@/assets/card-image-1.png'
-import image2 from '@/assets/card-image-2.png'
+import image1 from "@/assets/card-image-1.png";
+import image2 from "@/assets/card-image-2.png";
 import { GrServices } from "react-icons/gr";
 
 const TechSectionComponent = () => {
@@ -16,7 +16,7 @@ const TechSectionComponent = () => {
       <Container>
         {/* custom tag component */}
         <SectionTag title="Our Service">
-        <GrServices />
+          <GrServices />
         </SectionTag>
         {/* section heading */}
         <SectionHeading
@@ -33,23 +33,23 @@ const TechSectionComponent = () => {
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eos
               voluptatem quo laborum perferendis eligendi voluptas nam
               dignissimos hic dolorem inventore…"
-            className="bg-[#F5F5F5]"
+            className="bg-accent"
           >
             <TiWeatherPartlySunny size={50} />
           </TechSectionCard>
           <div className="col-span-2">
             <Image
-            alt="card image"
-            src={image1}
-            className="object-cover w-full h-full"
-        />
+              alt="card image"
+              src={image1}
+              className="object-cover w-full h-full"
+            />
           </div>
           <div>
             <Image
-            alt="card image"
-            src={image2}
-            className="object-cover w-full h-full rounded-3xl"
-        />
+              alt="card image"
+              src={image2}
+              className="object-cover w-full h-full rounded-3xl"
+            />
           </div>
           <TechSectionCard
             title="Lorem Ipsum"
@@ -71,7 +71,6 @@ const TechSectionComponent = () => {
           >
             <FaCode size={50} />
           </TechSectionCard>
-        
         </div>
       </Container>
     </div>

@@ -62,9 +62,7 @@ const SolutionComponent = () => {
                   src={item.img.src}
                 />
               </CardBody>
-              <CardFooter
-                className="text-small flex-col items-start -5 bg-[#F5F5F5] border-1 border-[#F5F5F5]"
-              >
+              <CardFooter className="text-small flex-col items-start -5 bg-accent border-1 border-[#F5F5F5]">
                 <h3 className="text-secondary capitalize text-xl font-bold w-1/ block">
                   {item.title}
                 </h3>

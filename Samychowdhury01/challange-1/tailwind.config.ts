@@ -16,7 +16,7 @@ const config: Config = {
         secondaryForeground: "#404040",
         primary: "#224192",
         secondary: "#171717 ",
-        
+        accent: "#F5F5F5"
       },
     },
   },

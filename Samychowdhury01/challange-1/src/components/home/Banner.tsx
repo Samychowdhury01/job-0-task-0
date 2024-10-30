@@ -1,5 +1,4 @@
 import React from "react";
-import NavbarComponent from "../ui/Navbar";
 import Container from "../ui/Container";
 import Image from "next/image";
 import ball from "@/assets/ball.png";
@@ -9,9 +8,6 @@ const BannerComponent = () => {
     <div className="relative mb-[210px]">
       <div className="banner-bg h-screen md:h-[1078px] relative">
         <Container>
-          <div className="md:pt-5">
-            <NavbarComponent />
-          </div>
           <div className="w-2/3 mx-auto flex items-center justify-center h-[70%]">
             <div className="text-center">
               {/* banner heading */}
@@ -35,7 +31,7 @@ const BannerComponent = () => {
         </Container>
       </div>
       {/* ball image */}
-      <div className="absolute -bottom-[21%] left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute -bottom-[14%] left-1/2 transform -translate-x-1/2 z-10">
         <Image src={ball} alt="banner-ball-image" width={765} height={766} />
       </div>
     </div>

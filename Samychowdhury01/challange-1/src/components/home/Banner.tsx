@@ -1,12 +1,12 @@
 import React from "react";
 import NavbarComponent from "../ui/Navbar";
 import Container from "../ui/Container";
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import ball from "@/assets/ball.png";
+import ButtonComponent from "../ui/ButtonComponent";
 const BannerComponent = () => {
   return (
-    <div className="relative">
+    <div className="relative mb-[280px]">
       <div className="banner-bg h-screen relative">
         <Container>
           <div className="md:pt-5">
@@ -15,7 +15,7 @@ const BannerComponent = () => {
           <div className="w-2/3 mx-auto flex items-center justify-center h-[70%]">
             <div className="text-center">
               {/* banner heading */}
-              <h1 className="text-6xl font-semibold mb-5">
+              <h1 className="text-6xl gradient-text font-semibold mb-5">
                 Transform your workflow with cutting-edge solutions from
                 FYTOBYTE LIMITED.
               </h1>
@@ -27,12 +27,8 @@ const BannerComponent = () => {
               </p>
               {/* action button */}
               <div className="flex items-center justify-center gap-5 mt-10 relative z-50">
-                <Button radius="md" className="bg-secondary text-white">
-                  Get Started
-                </Button>
-                <Button radius="md" className="bg-secondary text-white">
-                  Join Us
-                </Button>
+                <ButtonComponent text="Get Started" radius="md" />
+                <ButtonComponent text="Join Us" radius="md" />
               </div>
             </div>
           </div>

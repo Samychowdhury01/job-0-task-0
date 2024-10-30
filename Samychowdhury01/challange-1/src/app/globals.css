@@ -7,7 +7,6 @@
   backdrop-filter: blur(7.7px);
   -webkit-backdrop-filter: blur(7.7px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  
 }
 
 .banner-bg {
@@ -15,4 +14,27 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #000000 50%, #685e5e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-sub-text {
+  background: linear-gradient(90deg, #000000 14.46%, #e7e7e7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-gradient {
+  background: linear-gradient(
+    164.12deg,
+    rgba(180, 9, 236, 0.2) 38.95%,
+    rgba(54, 9, 236, 0.2) 92.27%
+  );
 }

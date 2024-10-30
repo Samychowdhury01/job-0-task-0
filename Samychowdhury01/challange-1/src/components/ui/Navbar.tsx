@@ -14,6 +14,7 @@ import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import ButtonComponent from "./ButtonComponent";
 
 // Navigation items
 const navItems = [
@@ -81,14 +82,7 @@ export default function NavbarComponent() {
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            as={Link}
-            href="#"
-            variant="flat"
-            className="rounded-full px-6 bg-secondary text-white"
-          >
-            Talk with us
-          </Button>
+          <ButtonComponent radius="full" text="Talk with us" />
         </NavbarItem>
       </NavbarContent>
 

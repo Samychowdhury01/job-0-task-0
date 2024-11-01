@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 "use client";
 import {
   Navbar,
@@ -12,7 +13,6 @@ import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import ButtonComponent from "./ButtonComponent";
 import Link from "next/link";
 import Container from "./Container";
 import ThemeToggle from "../ThemeSwitcher";
@@ -90,6 +90,7 @@ export default function NavbarComponent() {
         </NavbarContent>
 
         {/* Mobile Menu */}
+        {/* @ts-ignore */}
         <NavbarMenu className="mt-10" isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
           {renderNavLinks(true)}
         </NavbarMenu>

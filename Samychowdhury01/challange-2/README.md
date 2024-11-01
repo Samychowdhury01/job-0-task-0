@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Challenge-2
 
-## Getting Started
+[Live Site](https://challange-2-omega.vercel.app/)  
+[Backend Repository](https://github.com/Samychowdhury01/todo)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is a task management application that features an advanced filtering system for tasks, enabling users to easily filter and sort tasks within a table. The application is built with Next.js and styled using Tailwind CSS, with a backend powered by Express and Mongoose.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**: A powerful React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **ShadCN**: A library for UI components to implement consistent design.
+- **React Table**: Integrated with ShadCN for building and styling tables with advanced filtering capabilities.
 
-## Learn More
+### Backend
 
-To learn more about Next.js, take a look at the following resources:
+- **Express**: A Node.js framework for building APIs and handling server-side logic.
+- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB, managing data models and database communication.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Advanced Task Filtering**: Filter and sort tasks dynamically within a table.
+- **Separate Backend**: Backend API built with Express and Mongoose to handle data persistence.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
